@@ -24,3 +24,24 @@ toPicker.config.onChange.push(function (selectedDates) {
     fromPicker.set("maxDate", selectedDates[0]);
   }
 });
+
+// grid/list switcher
+const viewButtons = document.querySelectorAll('.view-btn');
+const postsContainer = document.querySelector('.posts-container');
+
+viewButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    viewButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    const viewType = button.getAttribute('data-view');
+
+    if (viewType === 'grid') {
+      postsContainer.classList.remove('view-list');
+      postsContainer.classList.add('view-grid');
+    } else {
+      postsContainer.classList.remove('view-grid');
+      postsContainer.classList.add('view-list');
+    }
+  });
+});

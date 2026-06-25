@@ -3,128 +3,271 @@
 .content-list {
   display: flex;
   flex-direction: column;
-  gap: 12px; // Расстояние между карточками-строками
+  gap: 12px; 
   margin-top: 30px;
   width: 100%;
 }
 
-.content-row {
-  display: flex;
-  flex-direction: column; // На мобильных карточка вертикальная
-  background: #ffffff;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  padding: 16px;
-  gap: 12px;
+.posts-container {
+  margin-top: 30px;
   width: 100%;
+}
 
-  // На десктопе выстраиваем всё строго по макету
-  @media (min-width: 768px) {
-    flex-direction: row;
-    align-items: center;
-    height: 86px; // Фиксированная высота строки из макета
-    padding: 0 24px 0 0; // Внутренний отступ справа, слева картинка прижата к краю
-    gap: 0;
-  }
+// --------------------------------------------------------------------------
+// .view-list
+// --------------------------------------------------------------------------
+.posts-container.view-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; // Расстояние между строками
 
-  // 1. Блок с картинкой
-  &__img {
-    width: 100%;
-    height: 200px;
+  .content-row {
+    display: flex;
+    flex-direction: column; 
+    background: #ffffff;
     border-radius: 4px;
-    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    padding: 16px;
+    gap: 12px;
+    width: 100%;
 
     @media (min-width: 768px) {
-      width: 110px; // Примерная ширина картинки, подгони под макет
-      height: 86px; // На всю высоту строки
-      border-radius: 4px 0 0 4px; // Скругляем только левые углы
-      flex-shrink: 0;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  // Общий класс для текстовых колонок
-  &__col {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4px;
-
-    @media (min-width: 768px) {
-      height: 100%;
-    }
-
-    // Первая колонка (Today + лайки)
-    &--main {
-      @media (min-width: 768px) {
-        padding-left: 24px;
-        flex: 1; // Занимает свободное пространство
-      }
-    }
-
-    // Вторая колонка (Центральная дата)
-    &--date {
-      @media (min-width: 768px) {
-        width: 180px;
-      }
-    }
-
-    // Третья колонка (Статус справа)
-    &--status {
-      @media (min-width: 768px) {
-        width: 150px;
-        align-items: flex-start;
-      }
-    }
-  }
-
-  // Стилизация текста
-  &__title {
-    font-size: 15px;
-    font-weight: 700;
-    color: #333333;
-  }
-
-  &__date-accent {
-    font-size: 15px;
-    font-style: italic;
-    font-weight: 700;
-    color: #333333;
-  }
-
-  &__status-title {
-    font-size: 14px;
-    font-weight: 700;
-    color: #333333;
-  }
-
-  &__status-date {
-    font-size: 12px;
-    color: #999999;
-  }
-
-  // Блок лайков и комментов
-  &__stats {
-    display: flex;
-    gap: 16px;
-    font-size: 13px;
-    color: #666666;
-    font-weight: 700;
-
-    .stat-item {
-      display: flex;
+      flex-direction: row;
       align-items: center;
-      gap: 6px;
+      height: 86px; 
+      padding: 0 24px 0 0; 
+      gap: 0;
+    }
+
+    &__img {
+      width: 100%;
+      height: 200px;
+      border-radius: 4px;
+      overflow: hidden;
+
+      @media (min-width: 768px) {
+        width: 110px; 
+        height: 86px; 
+        border-radius: 4px 0 0 4px; 
+        flex-shrink: 0;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4px;
+
+      @media (min-width: 768px) {
+        height: 100%;
+      }
+
+      &--main {
+        @media (min-width: 768px) {
+          padding-left: 24px;
+          flex: 1;
+        }
+      }
+
+      &--date {
+        @media (min-width: 768px) {
+          width: 180px;
+        }
+      }
+
+      &--status {
+        @media (min-width: 768px) {
+          width: 150px;
+          align-items: flex-start;
+        }
+      }
     }
   }
 }
 
-// Кнопка LOAD MORE внизу
+// --------------------------------------------------------------------------
+// .view-grid
+// --------------------------------------------------------------------------
+.posts-container.view-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); 
+  gap: 20px;
+
+  @media (min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+
+  .content-row {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: inset 0 12px 24px 0 rgba(0, 0, 0, 0.12), 0 4px 24px 0 rgba(0, 0, 0, 0.12);
+    padding: 0 0 16px 0; 
+    width: 100%;
+    gap: 0;
+
+    @media (min-width: 768px) {
+      height: auto; 
+    }
+
+    &__img {
+      flex: 0 0 100%; 
+      width: 100%;
+      height: auto;
+      border-radius: 4px 4px 0 0;
+      overflow: hidden;
+      margin-bottom: 12px;
+
+      @media (min-width: 768px) {
+        width: 100%;
+        height: auto;
+      }
+
+      img {
+        width: 100%;
+        aspect-ratio: 1 / 1; 
+        object-fit: cover;
+        display: block;
+      }
+    }
+
+    &__col {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 6px;
+      padding: 0 12px;
+      box-sizing: border-box;
+
+      @media (min-width: 768px) {
+        height: auto;
+      }
+
+      &--main {
+        flex: 0 0 50%;
+        width: 50%;
+        
+        @media (min-width: 768px) {
+          padding-left: 12px;
+        }
+      }
+
+      &--date {
+        flex: 0 0 50%;
+        width: 50%;
+        align-items: flex-end;
+        text-align: right;
+
+        @media (min-width: 768px) {
+          width: 50%;
+        }
+      }
+
+      &--status {
+        flex: 0 0 100%;
+        width: 100%;
+        margin-top: 12px;
+        padding-top: 8px;
+        border-top: 1px solid #f0f0f0; // Разделитель
+        flex-direction: row; // Элементы внутри статуса в линию
+        justify-content: space-between;
+
+        @media (min-width: 768px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.content-row {
+  &__title, &__date-accent, &__status-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  &__status-date {
+    font-size: 13px;
+    color: #8e8e8e;
+  }
+
+  &__stats {
+    display: flex;
+    flex-direction: column; 
+    gap: 6px;
+
+    .posts-container.view-list & {
+      flex-direction: row;
+      gap: 16px;
+    }
+
+    .stat-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 600;
+
+      img {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+}
+
+.view-switch {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.view-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #b0b0b0; 
+  transition: color 0.2s ease;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+
+  &:hover {
+    color: #8e8e8e;
+  }
+
+  &.active {
+    color: #3897f0; 
+  }
+
+  svg.icon-rows {
+    transform: scale(1.4); 
+  }
+}
+
 .load-more-wrapper {
   display: flex;
   justify-content: center;
@@ -132,19 +275,77 @@
 }
 
 .btn-load-more {
-  background: #ffffff;
-  border: 1px solid #e1e1e1;
+  background: $light-bg;
+  border: 1px solid $grey-color;
   border-radius: 20px;
-  color: #666666;
-  font-size: 12px;
+  color: $grey-color;
+  font-size: 11px;
   font-weight: 700;
   padding: 10px 32px;
   cursor: pointer;
   transition: all 0.2s ease;
 
   &:hover {
-    background: #2b7d6c;
-    color: #ffffff;
-    border-color: #2b7d6c;
+    background:$primary-green;
+    color: $light-color;
+    border-color: $primary-green;
   }
 }
+
+.view-switch {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.view-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-switch {
+  display: flex;
+  align-items: center;
+  gap: 12px; 
+  margin-left: auto;
+}
+
+.view-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  color: #b0b0b0; 
+  transition: color 0.2s ease;
+}
+
+.view-btn svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.view-btn:hover {
+  color: #8e8e8e;
+}
+
+.view-btn.active {
+  color: $blue-color; 
+}
+
+
+.view-btn svg.icon-rows {
+  transform: scale(1.4); 
+}
+

@@ -71,245 +71,264 @@
     </header>
     <main class="container">
       <div class="content-list">
-        <div class="content-row">
-          <div class="content-row__img">
-            <img src="/src/assets/images/posts/post8.jpg" alt="Post preview" />
-          </div>
+        <div class="view-switch">
+          <button type="button" class="view-btn" data-view="grid" aria-label="Grid view">
+            <svg class="icon-grid" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M3 3h4v4H3zm7 0h4v4h-4zm7 0h4v4h-4zM3 10h4v4H3zm7 0h4v4h-4zm7 0h4v4h-4zM3 17h4v4H3zm7 0h4v4h-4zm7 0h4v4h-4z"
+              />
+            </svg>
+          </button>
 
-          <div class="content-row__col content-row__col--main">
-            <span class="content-row__title">Today</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 128</span>
-              <span class="stat-item"><i class="icon-comment"></i> 31</span>
-            </div>
-          </div>
-
-          <div class="content-row__col content-row__col--date">
-            <span class="content-row__date-accent">9-08-2016</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 67</span>
-              <span class="stat-item"><i class="icon-comment"></i> 22</span>
-            </div>
-          </div>
-
-          <div class="content-row__col content-row__col--status">
-            <span class="content-row__status-title">Image upload</span>
-            <span class="content-row__status-date">11-04-2016</span>
-          </div>
+          <button type="button" class="view-btn active" data-view="list" aria-label="List view">
+            <svg class="icon-rows" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M4 6h2v2H4zm5 0h11v2H9zM4 11h2v2H4zm5 0h11v2H9zM4 16h2v2H4zm5 0h11v2H9z" />
+            </svg>
+          </button>
         </div>
+        <div class="posts-container view-list">
+          <div class="content-row">
+            <div class="content-row__img">
+              <img src="/src/assets/images/posts/post8.jpg" alt="Post preview" />
+            </div>
 
-        <div class="content-row">
-          <div class="content-row__img">
-            <img src="/src/assets/images/posts/post9.jpg" alt="Post preview" />
-          </div>
+            <div class="content-row__col content-row__col--main">
+              <span class="content-row__title">Today1</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="/src/assets/icons/heart.svg" alt="" /> 128</span>
+                <span class="stat-item"><img src="/src/assets/icons/comment.svg" alt="" /> 31</span>
+              </div>
+            </div>
 
-          <div class="content-row__col content-row__col--main">
-            <span class="content-row__title">Today</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 128</span>
-              <span class="stat-item"><i class="icon-comment"></i> 31</span>
+            <div class="content-row__col content-row__col--date">
+              <span class="content-row__date-accent">9-08-2016</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="/src/assets/icons/heart.svg" alt="" /> 67</span>
+                <span class="stat-item"><img src="/src/assets/icons/comment.svg" alt="" /> 22</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--status">
+              <span class="content-row__status-title">Image upload</span>
+              <span class="content-row__status-date">11-04-2016</span>
             </div>
           </div>
 
-          <div class="content-row__col content-row__col--date">
-            <span class="content-row__date-accent">9-08-2016</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 67</span>
-              <span class="stat-item"><i class="icon-comment"></i> 22</span>
+          <div class="content-row">
+            <div class="content-row__img">
+              <img src="/src/assets/images/posts/post9.jpg" alt="Post preview" />
+            </div>
+
+            <div class="content-row__col content-row__col--main">
+              <span class="content-row__title">Today</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="/src/assets/icons/heart.svg" alt="" /> 128</span>
+                <span class="stat-item"><img src="/src/assets/icons/comment.svg" alt="" /> 31</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--date">
+              <span class="content-row__date-accent">9-08-2016</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="/src/assets/icons/heart.svg" alt="" /> 67</span>
+                <span class="stat-item"><img src="/src/assets/icons/comment.svg" alt="" /> 22</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--status">
+              <span class="content-row__status-title">Image upload</span>
+              <span class="content-row__status-date">11-04-2016</span>
             </div>
           </div>
 
-          <div class="content-row__col content-row__col--status">
-            <span class="content-row__status-title">Image upload</span>
-            <span class="content-row__status-date">11-04-2016</span>
-          </div>
-        </div>
+          <div class="content-row">
+            <div class="content-row__img">
+              <img src="/src/assets/images/posts/post1.jpg" alt="Post preview" />
+            </div>
 
-        <div class="content-row">
-          <div class="content-row__img">
-            <img src="/src/assets/images/posts/post1.jpg" alt="Post preview" />
-          </div>
+            <div class="content-row__col content-row__col--main">
+              <span class="content-row__title">Today</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="/src/assets/icons/heart.svg" alt="" /> 128</span>
+                <span class="stat-item"><img src="/src/assets/icons/comment.svg" alt="" /> 31</span>
+              </div>
+            </div>
 
-          <div class="content-row__col content-row__col--main">
-            <span class="content-row__title">Today</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 128</span>
-              <span class="stat-item"><i class="icon-comment"></i> 31</span>
+            <div class="content-row__col content-row__col--date">
+              <span class="content-row__date-accent">9-08-2016</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="/src/assets/icons/heart.svg" alt="" /> 67</span>
+                <span class="stat-item"><img src="/src/assets/icons/comment.svg" alt="" /> 22</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--status">
+              <span class="content-row__status-title">Image upload</span>
+              <span class="content-row__status-date">11-04-2016</span>
             </div>
           </div>
 
-          <div class="content-row__col content-row__col--date">
-            <span class="content-row__date-accent">9-08-2016</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 67</span>
-              <span class="stat-item"><i class="icon-comment"></i> 22</span>
+          <div class="content-row">
+            <div class="content-row__img">
+              <img src="/src/assets/images/posts/post2.jpg" alt="Post preview" />
+            </div>
+
+            <div class="content-row__col content-row__col--main">
+              <span class="content-row__title">Today</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="/src/assets/icons/heart.svg" alt="" /> 128</span>
+                <span class="stat-item"><img src="/src/assets/icons/comment.svg" alt="" /> 31</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--date">
+              <span class="content-row__date-accent">9-08-2016</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="/src/assets/icons/heart.svg" alt="" /> 67</span>
+                <span class="stat-item"><img src="/src/assets/icons/comment.svg" alt="" /> 22</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--status">
+              <span class="content-row__status-title">Image upload</span>
+              <span class="content-row__status-date">11-04-2016</span>
             </div>
           </div>
 
-          <div class="content-row__col content-row__col--status">
-            <span class="content-row__status-title">Image upload</span>
-            <span class="content-row__status-date">11-04-2016</span>
-          </div>
-        </div>
+          <div class="content-row">
+            <div class="content-row__img">
+              <img src="/src/assets/images/posts/post3.jpg" alt="Post preview" />
+            </div>
 
-        <div class="content-row">
-          <div class="content-row__img">
-            <img src="/src/assets/images/posts/post2.jpg" alt="Post preview" />
-          </div>
+            <div class="content-row__col content-row__col--main">
+              <span class="content-row__title">Today</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="/src/assets/icons/heart.svg" alt="" /> 128</span>
+                <span class="stat-item"><img src="/src/assets/icons/comment.svg" alt="" /> 31</span>
+              </div>
+            </div>
 
-          <div class="content-row__col content-row__col--main">
-            <span class="content-row__title">Today</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 128</span>
-              <span class="stat-item"><i class="icon-comment"></i> 31</span>
+            <div class="content-row__col content-row__col--date">
+              <span class="content-row__date-accent">9-08-2016</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="/src/assets/icons/heart.svg" alt="" /> 67</span>
+                <span class="stat-item"><img src="/src/assets/icons/comment.svg" alt="" /> 22</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--status">
+              <span class="content-row__status-title">Image upload</span>
+              <span class="content-row__status-date">11-04-2016</span>
             </div>
           </div>
 
-          <div class="content-row__col content-row__col--date">
-            <span class="content-row__date-accent">9-08-2016</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 67</span>
-              <span class="stat-item"><i class="icon-comment"></i> 22</span>
+          <div class="content-row">
+            <div class="content-row__img">
+              <img src="/src/assets/images/posts/post4.jpg" alt="Post preview" />
+            </div>
+
+            <div class="content-row__col content-row__col--main">
+              <span class="content-row__title">Today</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="/src/assets/icons/heart.svg" alt="" /> 128</span>
+                <span class="stat-item"><img src="/src/assets/icons/comment.svg" alt="" /> 31</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--date">
+              <span class="content-row__date-accent">9-08-2016</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="/src/assets/icons/heart.svg" alt="" /> 67</span>
+                <span class="stat-item"><img src="/src/assets/icons/comment.svg" alt="" /> 22</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--status">
+              <span class="content-row__status-title">Image upload</span>
+              <span class="content-row__status-date">11-04-2016</span>
             </div>
           </div>
 
-          <div class="content-row__col content-row__col--status">
-            <span class="content-row__status-title">Image upload</span>
-            <span class="content-row__status-date">11-04-2016</span>
-          </div>
-        </div>
+          <div class="content-row">
+            <div class="content-row__img">
+              <img src="/src/assets/images/posts/post5.jpg" alt="Post preview" />
+            </div>
 
-        <div class="content-row">
-          <div class="content-row__img">
-            <img src="/src/assets/images/posts/post3.jpg" alt="Post preview" />
-          </div>
+            <div class="content-row__col content-row__col--main">
+              <span class="content-row__title">Today</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="/src/assets/icons/heart.svg" alt="" /> 128</span>
+                <span class="stat-item"><img src="/src/assets/icons/comment.svg" alt="" /> 31</span>
+              </div>
+            </div>
 
-          <div class="content-row__col content-row__col--main">
-            <span class="content-row__title">Today</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 128</span>
-              <span class="stat-item"><i class="icon-comment"></i> 31</span>
+            <div class="content-row__col content-row__col--date">
+              <span class="content-row__date-accent">9-08-2016</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="/src/assets/icons/heart.svg" alt="" /> 67</span>
+                <span class="stat-item"><img src="/src/assets/icons/comment.svg" alt="" /> 22</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--status">
+              <span class="content-row__status-title">Image upload</span>
+              <span class="content-row__status-date">11-04-2016</span>
             </div>
           </div>
 
-          <div class="content-row__col content-row__col--date">
-            <span class="content-row__date-accent">9-08-2016</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 67</span>
-              <span class="stat-item"><i class="icon-comment"></i> 22</span>
+          <div class="content-row">
+            <div class="content-row__img">
+              <img src="/src/assets/images/posts/post6.jpg" alt="Post preview" />
+            </div>
+
+            <div class="content-row__col content-row__col--main">
+              <span class="content-row__title">Today</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="/src/assets/icons/heart.svg" alt="" /> 128</span>
+                <span class="stat-item"><img src="/src/assets/icons/comment.svg" alt="" /> 31</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--date">
+              <span class="content-row__date-accent">9-08-2016</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="/src/assets/icons/heart.svg" alt="" /> 67</span>
+                <span class="stat-item"><img src="/src/assets/icons/comment.svg" alt="" /> 22</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--status">
+              <span class="content-row__status-title">Image upload</span>
+              <span class="content-row__status-date">11-04-2016</span>
             </div>
           </div>
 
-          <div class="content-row__col content-row__col--status">
-            <span class="content-row__status-title">Image upload</span>
-            <span class="content-row__status-date">11-04-2016</span>
-          </div>
-        </div>
-
-        <div class="content-row">
-          <div class="content-row__img">
-            <img src="/src/assets/images/posts/post4.jpg" alt="Post preview" />
-          </div>
-
-          <div class="content-row__col content-row__col--main">
-            <span class="content-row__title">Today</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 128</span>
-              <span class="stat-item"><i class="icon-comment"></i> 31</span>
+          <div class="content-row">
+            <div class="content-row__img">
+              <img src="/src/assets/images/posts/post7.jpg" alt="Post preview" />
             </div>
-          </div>
 
-          <div class="content-row__col content-row__col--date">
-            <span class="content-row__date-accent">9-08-2016</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 67</span>
-              <span class="stat-item"><i class="icon-comment"></i> 22</span>
+            <div class="content-row__col content-row__col--main">
+              <span class="content-row__title">Today</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="/src/assets/icons/heart.svg" alt="" /> 128</span>
+                <span class="stat-item"><img src="/src/assets/icons/comment.svg" alt="" /> 31</span>
+              </div>
             </div>
-          </div>
 
-          <div class="content-row__col content-row__col--status">
-            <span class="content-row__status-title">Image upload</span>
-            <span class="content-row__status-date">11-04-2016</span>
-          </div>
-        </div>
-        <div class="content-row">
-          <div class="content-row__img">
-            <img src="/src/assets/images/posts/post5.jpg" alt="Post preview" />
-          </div>
-
-          <div class="content-row__col content-row__col--main">
-            <span class="content-row__title">Today</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 128</span>
-              <span class="stat-item"><i class="icon-comment"></i> 31</span>
+            <div class="content-row__col content-row__col--date">
+              <span class="content-row__date-accent">9-08-2016</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="/src/assets/icons/heart.svg" alt="" /> 67</span>
+                <span class="stat-item"><img src="/src/assets/icons/comment.svg" alt="" /> 22</span>
+              </div>
             </div>
-          </div>
 
-          <div class="content-row__col content-row__col--date">
-            <span class="content-row__date-accent">9-08-2016</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 67</span>
-              <span class="stat-item"><i class="icon-comment"></i> 22</span>
+            <div class="content-row__col content-row__col--status">
+              <span class="content-row__status-title">Image upload</span>
+              <span class="content-row__status-date">11-04-2016</span>
             </div>
-          </div>
-
-          <div class="content-row__col content-row__col--status">
-            <span class="content-row__status-title">Image upload</span>
-            <span class="content-row__status-date">11-04-2016</span>
-          </div>
-        </div>
-
-        <div class="content-row">
-          <div class="content-row__img">
-            <img src="/src/assets/images/posts/post6.jpg" alt="Post preview" />
-          </div>
-
-          <div class="content-row__col content-row__col--main">
-            <span class="content-row__title">Today</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 128</span>
-              <span class="stat-item"><i class="icon-comment"></i> 31</span>
-            </div>
-          </div>
-
-          <div class="content-row__col content-row__col--date">
-            <span class="content-row__date-accent">9-08-2016</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 67</span>
-              <span class="stat-item"><i class="icon-comment"></i> 22</span>
-            </div>
-          </div>
-
-          <div class="content-row__col content-row__col--status">
-            <span class="content-row__status-title">Image upload</span>
-            <span class="content-row__status-date">11-04-2016</span>
-          </div>
-        </div>
-
-        <div class="content-row">
-          <div class="content-row__img">
-            <img src="/src/assets/images/posts/post7.jpg" alt="Post preview" />
-          </div>
-
-          <div class="content-row__col content-row__col--main">
-            <span class="content-row__title">Today</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 128</span>
-              <span class="stat-item"><i class="icon-comment"></i> 31</span>
-            </div>
-          </div>
-
-          <div class="content-row__col content-row__col--date">
-            <span class="content-row__date-accent">9-08-2016</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 67</span>
-              <span class="stat-item"><i class="icon-comment"></i> 22</span>
-            </div>
-          </div>
-
-          <div class="content-row__col content-row__col--status">
-            <span class="content-row__status-title">Image upload</span>
-            <span class="content-row__status-date">11-04-2016</span>
           </div>
         </div>
       </div>

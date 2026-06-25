@@ -33,21 +33,20 @@
 .profile-info {
   display: flex;
   flex-direction: column;
-  gap: 16px; /* Вертикальный отступ между строками */
+  gap: 16px; 
   color: #000000;
 }
 
-/* --- Первая строка: Юзернейм и кнопка --- */
 .profile-row-meta {
   display: flex;
   align-items: center;
-  gap: 14px; /* Отступ между именем и кнопкой */
+  gap: 14px; 
 }
 
 .profile-username {
   font-size: 24px;
   font-family: $font-montserrat;
-  font-weight: $font-medium; // 500
+  font-weight: $font-medium; 
   margin: 0;
   letter-spacing: -0.5px;
 }
@@ -66,11 +65,9 @@
   background: transparent;
 }
 
-/* --- Вторая строка: Статистика --- */
 .profile-stats {
   display: flex;
   gap: 24px; 
-  font-size: 14px;
   color: #262626;
 }
 
@@ -78,12 +75,11 @@
   font-weight: 600;
 }
 
-/* --- Третья строка: Фильтры даты --- */
 .profile-filters {
   display: flex;
   align-items: center;
-  gap: 18px; /* Отступ от слова 'Date' до первого инпута */
-  margin-top: 4px; /* Небольшой визуальный баланс */
+  gap: 18px; 
+  margin-top: 4px; 
 }
 
 .filter-label {
@@ -93,16 +89,15 @@
 .filter-inputs {
   display: flex;
   align-items: center;
-  gap: 16px; /* Расстояние между двумя инпутами (from и to) */
+  gap: 16px;
 }
 
-/* Контейнер инпута с фиксированной высотой */
 .datepicker-field {
   display: flex;
   align-items: center;
   border: 1px solid #cccccc;
   border-radius: 4px;
-  height: 34px; /* Оптимальная высота под макет */
+  height: 34px; 
   overflow: hidden;
   box-sizing: border-box;
   background-color: #ffffff;
@@ -114,7 +109,7 @@
   padding: 0 10px;
   font-size: 15px;
   color: #262626;
-  width: 115px; /* Аккуратная ширина под текст */
+  width: 115px; 
   height: 100%;
 }
 
@@ -122,30 +117,26 @@
   color: #999999;
 }
 
-/* Блок серых иконок справа */
 .datepicker-icons {
   display: flex;
   align-items: center;
   height: 100%;
-  background-color: #efefef; /* Тот самый светло-серый фон плашки */
+  background-color: #efefef; 
   border-left: 1px solid #cccccc;
 }
 
-/* Сами иконки строго 24x24 */
 .datepicker-icons img {
   width: 24px;
   height: 24px;
-  padding: 0 6px; /* Внутренние отступы для кликабельности */
+  padding: 0 6px; 
   cursor: pointer;
-  box-sizing: content-box; /* Чтобы padding не сжимал саму иконку */
+  box-sizing: content-box; 
 }
 
-/* Линия-разделитель между крестиком и календарем */
 .datepicker-icons img:not(:last-child) {
   border-right: 1px solid #cccccc;
 }
 
-/* Легкий ховер-эффект для интерактивности */
 .datepicker-icons img:hover {
   background-color: #e2e2e2;
 }

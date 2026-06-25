@@ -13,16 +13,16 @@ body {
   color:$dark-text;
   min-height: 100vh;
   position: relative;
-  overflow-x: hidden; // Ховає горизонтальний скролл, якщо хвиля трохи вилізе
+  overflow-x: hidden; 
+  font-size: $font-size-base;
 }
 
-// 2. Головний контейнер для контенту (твої 836px)
 .container {
   width: 100%;
   max-width: 836px;
-  margin: 0 auto; // Центрує контент на екрані
-  padding: 0 20px; // Безпечні відступи для мобільних з боків
+  margin: 0 auto; 
+  padding: 0 20px; 
 
   position: relative;
-  z-index: 2; // Піднімає контент НАД хвилями, щоб текст можна було виділити
+  z-index: 2; 
 }
