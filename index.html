@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Monblan Project</title>
-    <script type="module" crossorigin src="/monblan-project/assets/index-C6ByVAwI.js"></script>
-    <link rel="stylesheet" crossorigin href="/monblan-project/assets/index-CvxwRCse.css">
+    <script type="module" crossorigin src="/monblan-project/assets/index-Djiya85K.js"></script>
+    <link rel="stylesheet" crossorigin href="/monblan-project/assets/index-CBLDBn7t.css">
   </head>
   <body>
     <div class="bg-wave bg-wave--left">
@@ -73,245 +73,264 @@
     </header>
     <main class="container">
       <div class="content-list">
-        <div class="content-row">
-          <div class="content-row__img">
-            <img src="/monblan-project/assets/post8-DefqxDPP.jpg" alt="Post preview" />
-          </div>
+        <div class="view-switch">
+          <button type="button" class="view-btn" data-view="grid" aria-label="Grid view">
+            <svg class="icon-grid" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M3 3h4v4H3zm7 0h4v4h-4zm7 0h4v4h-4zM3 10h4v4H3zm7 0h4v4h-4zm7 0h4v4h-4zM3 17h4v4H3zm7 0h4v4h-4zm7 0h4v4h-4z"
+              />
+            </svg>
+          </button>
 
-          <div class="content-row__col content-row__col--main">
-            <span class="content-row__title">Today</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 128</span>
-              <span class="stat-item"><i class="icon-comment"></i> 31</span>
-            </div>
-          </div>
-
-          <div class="content-row__col content-row__col--date">
-            <span class="content-row__date-accent">9-08-2016</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 67</span>
-              <span class="stat-item"><i class="icon-comment"></i> 22</span>
-            </div>
-          </div>
-
-          <div class="content-row__col content-row__col--status">
-            <span class="content-row__status-title">Image upload</span>
-            <span class="content-row__status-date">11-04-2016</span>
-          </div>
+          <button type="button" class="view-btn active" data-view="list" aria-label="List view">
+            <svg class="icon-rows" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M4 6h2v2H4zm5 0h11v2H9zM4 11h2v2H4zm5 0h11v2H9zM4 16h2v2H4zm5 0h11v2H9z" />
+            </svg>
+          </button>
         </div>
+        <div class="posts-container view-list">
+          <div class="content-row">
+            <div class="content-row__img">
+              <img src="/monblan-project/assets/post8-DefqxDPP.jpg" alt="Post preview" />
+            </div>
 
-        <div class="content-row">
-          <div class="content-row__img">
-            <img src="/monblan-project/assets/post9-D8A5e7ip.jpg" alt="Post preview" />
-          </div>
+            <div class="content-row__col content-row__col--main">
+              <span class="content-row__title">Today1</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.5%206.3C1.49991%205.76177%201.6071%205.22893%201.8153%204.73261C2.02351%204.23629%202.32855%203.78644%202.71261%203.40937C3.09667%203.03229%203.55203%202.73555%204.05209%202.53649C4.55215%202.33742%205.08687%202.24003%205.625%202.25C6.26172%202.24662%206.89189%202.3786%207.47374%202.6372C8.05559%202.8958%208.57584%203.27511%209%203.75C9.42416%203.27511%209.94441%202.8958%2010.5263%202.6372C11.1081%202.3786%2011.7383%202.24662%2012.375%202.25C12.9131%202.24003%2013.4479%202.33742%2013.9479%202.53649C14.448%202.73555%2014.9033%203.03229%2015.2874%203.40937C15.6714%203.78644%2015.9765%204.23629%2016.1847%204.73261C16.3929%205.22893%2016.5001%205.76177%2016.5%206.3C16.5%2010.317%2011.7157%2013.35%209%2015.75C6.29025%2013.3297%201.5%2010.32%201.5%206.3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 128</span>
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5%203C16.5%202.175%2015.825%201.5%2015%201.5H3C2.175%201.5%201.5%202.175%201.5%203V12C1.5%2012.825%202.175%2013.5%203%2013.5H13.5L16.5%2016.5V3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 31</span>
+              </div>
+            </div>
 
-          <div class="content-row__col content-row__col--main">
-            <span class="content-row__title">Today</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 128</span>
-              <span class="stat-item"><i class="icon-comment"></i> 31</span>
+            <div class="content-row__col content-row__col--date">
+              <span class="content-row__date-accent">9-08-2016</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.5%206.3C1.49991%205.76177%201.6071%205.22893%201.8153%204.73261C2.02351%204.23629%202.32855%203.78644%202.71261%203.40937C3.09667%203.03229%203.55203%202.73555%204.05209%202.53649C4.55215%202.33742%205.08687%202.24003%205.625%202.25C6.26172%202.24662%206.89189%202.3786%207.47374%202.6372C8.05559%202.8958%208.57584%203.27511%209%203.75C9.42416%203.27511%209.94441%202.8958%2010.5263%202.6372C11.1081%202.3786%2011.7383%202.24662%2012.375%202.25C12.9131%202.24003%2013.4479%202.33742%2013.9479%202.53649C14.448%202.73555%2014.9033%203.03229%2015.2874%203.40937C15.6714%203.78644%2015.9765%204.23629%2016.1847%204.73261C16.3929%205.22893%2016.5001%205.76177%2016.5%206.3C16.5%2010.317%2011.7157%2013.35%209%2015.75C6.29025%2013.3297%201.5%2010.32%201.5%206.3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 67</span>
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5%203C16.5%202.175%2015.825%201.5%2015%201.5H3C2.175%201.5%201.5%202.175%201.5%203V12C1.5%2012.825%202.175%2013.5%203%2013.5H13.5L16.5%2016.5V3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 22</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--status">
+              <span class="content-row__status-title">Image upload</span>
+              <span class="content-row__status-date">11-04-2016</span>
             </div>
           </div>
 
-          <div class="content-row__col content-row__col--date">
-            <span class="content-row__date-accent">9-08-2016</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 67</span>
-              <span class="stat-item"><i class="icon-comment"></i> 22</span>
+          <div class="content-row">
+            <div class="content-row__img">
+              <img src="/monblan-project/assets/post9-D8A5e7ip.jpg" alt="Post preview" />
+            </div>
+
+            <div class="content-row__col content-row__col--main">
+              <span class="content-row__title">Today</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.5%206.3C1.49991%205.76177%201.6071%205.22893%201.8153%204.73261C2.02351%204.23629%202.32855%203.78644%202.71261%203.40937C3.09667%203.03229%203.55203%202.73555%204.05209%202.53649C4.55215%202.33742%205.08687%202.24003%205.625%202.25C6.26172%202.24662%206.89189%202.3786%207.47374%202.6372C8.05559%202.8958%208.57584%203.27511%209%203.75C9.42416%203.27511%209.94441%202.8958%2010.5263%202.6372C11.1081%202.3786%2011.7383%202.24662%2012.375%202.25C12.9131%202.24003%2013.4479%202.33742%2013.9479%202.53649C14.448%202.73555%2014.9033%203.03229%2015.2874%203.40937C15.6714%203.78644%2015.9765%204.23629%2016.1847%204.73261C16.3929%205.22893%2016.5001%205.76177%2016.5%206.3C16.5%2010.317%2011.7157%2013.35%209%2015.75C6.29025%2013.3297%201.5%2010.32%201.5%206.3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 128</span>
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5%203C16.5%202.175%2015.825%201.5%2015%201.5H3C2.175%201.5%201.5%202.175%201.5%203V12C1.5%2012.825%202.175%2013.5%203%2013.5H13.5L16.5%2016.5V3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 31</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--date">
+              <span class="content-row__date-accent">9-08-2016</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.5%206.3C1.49991%205.76177%201.6071%205.22893%201.8153%204.73261C2.02351%204.23629%202.32855%203.78644%202.71261%203.40937C3.09667%203.03229%203.55203%202.73555%204.05209%202.53649C4.55215%202.33742%205.08687%202.24003%205.625%202.25C6.26172%202.24662%206.89189%202.3786%207.47374%202.6372C8.05559%202.8958%208.57584%203.27511%209%203.75C9.42416%203.27511%209.94441%202.8958%2010.5263%202.6372C11.1081%202.3786%2011.7383%202.24662%2012.375%202.25C12.9131%202.24003%2013.4479%202.33742%2013.9479%202.53649C14.448%202.73555%2014.9033%203.03229%2015.2874%203.40937C15.6714%203.78644%2015.9765%204.23629%2016.1847%204.73261C16.3929%205.22893%2016.5001%205.76177%2016.5%206.3C16.5%2010.317%2011.7157%2013.35%209%2015.75C6.29025%2013.3297%201.5%2010.32%201.5%206.3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 67</span>
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5%203C16.5%202.175%2015.825%201.5%2015%201.5H3C2.175%201.5%201.5%202.175%201.5%203V12C1.5%2012.825%202.175%2013.5%203%2013.5H13.5L16.5%2016.5V3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 22</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--status">
+              <span class="content-row__status-title">Image upload</span>
+              <span class="content-row__status-date">11-04-2016</span>
             </div>
           </div>
 
-          <div class="content-row__col content-row__col--status">
-            <span class="content-row__status-title">Image upload</span>
-            <span class="content-row__status-date">11-04-2016</span>
-          </div>
-        </div>
+          <div class="content-row">
+            <div class="content-row__img">
+              <img src="/monblan-project/assets/post1-DOFlNIv9.jpg" alt="Post preview" />
+            </div>
 
-        <div class="content-row">
-          <div class="content-row__img">
-            <img src="/monblan-project/assets/post1-DOFlNIv9.jpg" alt="Post preview" />
-          </div>
+            <div class="content-row__col content-row__col--main">
+              <span class="content-row__title">Today</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.5%206.3C1.49991%205.76177%201.6071%205.22893%201.8153%204.73261C2.02351%204.23629%202.32855%203.78644%202.71261%203.40937C3.09667%203.03229%203.55203%202.73555%204.05209%202.53649C4.55215%202.33742%205.08687%202.24003%205.625%202.25C6.26172%202.24662%206.89189%202.3786%207.47374%202.6372C8.05559%202.8958%208.57584%203.27511%209%203.75C9.42416%203.27511%209.94441%202.8958%2010.5263%202.6372C11.1081%202.3786%2011.7383%202.24662%2012.375%202.25C12.9131%202.24003%2013.4479%202.33742%2013.9479%202.53649C14.448%202.73555%2014.9033%203.03229%2015.2874%203.40937C15.6714%203.78644%2015.9765%204.23629%2016.1847%204.73261C16.3929%205.22893%2016.5001%205.76177%2016.5%206.3C16.5%2010.317%2011.7157%2013.35%209%2015.75C6.29025%2013.3297%201.5%2010.32%201.5%206.3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 128</span>
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5%203C16.5%202.175%2015.825%201.5%2015%201.5H3C2.175%201.5%201.5%202.175%201.5%203V12C1.5%2012.825%202.175%2013.5%203%2013.5H13.5L16.5%2016.5V3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 31</span>
+              </div>
+            </div>
 
-          <div class="content-row__col content-row__col--main">
-            <span class="content-row__title">Today</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 128</span>
-              <span class="stat-item"><i class="icon-comment"></i> 31</span>
+            <div class="content-row__col content-row__col--date">
+              <span class="content-row__date-accent">9-08-2016</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.5%206.3C1.49991%205.76177%201.6071%205.22893%201.8153%204.73261C2.02351%204.23629%202.32855%203.78644%202.71261%203.40937C3.09667%203.03229%203.55203%202.73555%204.05209%202.53649C4.55215%202.33742%205.08687%202.24003%205.625%202.25C6.26172%202.24662%206.89189%202.3786%207.47374%202.6372C8.05559%202.8958%208.57584%203.27511%209%203.75C9.42416%203.27511%209.94441%202.8958%2010.5263%202.6372C11.1081%202.3786%2011.7383%202.24662%2012.375%202.25C12.9131%202.24003%2013.4479%202.33742%2013.9479%202.53649C14.448%202.73555%2014.9033%203.03229%2015.2874%203.40937C15.6714%203.78644%2015.9765%204.23629%2016.1847%204.73261C16.3929%205.22893%2016.5001%205.76177%2016.5%206.3C16.5%2010.317%2011.7157%2013.35%209%2015.75C6.29025%2013.3297%201.5%2010.32%201.5%206.3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 67</span>
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5%203C16.5%202.175%2015.825%201.5%2015%201.5H3C2.175%201.5%201.5%202.175%201.5%203V12C1.5%2012.825%202.175%2013.5%203%2013.5H13.5L16.5%2016.5V3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 22</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--status">
+              <span class="content-row__status-title">Image upload</span>
+              <span class="content-row__status-date">11-04-2016</span>
             </div>
           </div>
 
-          <div class="content-row__col content-row__col--date">
-            <span class="content-row__date-accent">9-08-2016</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 67</span>
-              <span class="stat-item"><i class="icon-comment"></i> 22</span>
+          <div class="content-row">
+            <div class="content-row__img">
+              <img src="/monblan-project/assets/post2-BhcvRp1o.jpg" alt="Post preview" />
+            </div>
+
+            <div class="content-row__col content-row__col--main">
+              <span class="content-row__title">Today</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.5%206.3C1.49991%205.76177%201.6071%205.22893%201.8153%204.73261C2.02351%204.23629%202.32855%203.78644%202.71261%203.40937C3.09667%203.03229%203.55203%202.73555%204.05209%202.53649C4.55215%202.33742%205.08687%202.24003%205.625%202.25C6.26172%202.24662%206.89189%202.3786%207.47374%202.6372C8.05559%202.8958%208.57584%203.27511%209%203.75C9.42416%203.27511%209.94441%202.8958%2010.5263%202.6372C11.1081%202.3786%2011.7383%202.24662%2012.375%202.25C12.9131%202.24003%2013.4479%202.33742%2013.9479%202.53649C14.448%202.73555%2014.9033%203.03229%2015.2874%203.40937C15.6714%203.78644%2015.9765%204.23629%2016.1847%204.73261C16.3929%205.22893%2016.5001%205.76177%2016.5%206.3C16.5%2010.317%2011.7157%2013.35%209%2015.75C6.29025%2013.3297%201.5%2010.32%201.5%206.3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 128</span>
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5%203C16.5%202.175%2015.825%201.5%2015%201.5H3C2.175%201.5%201.5%202.175%201.5%203V12C1.5%2012.825%202.175%2013.5%203%2013.5H13.5L16.5%2016.5V3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 31</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--date">
+              <span class="content-row__date-accent">9-08-2016</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.5%206.3C1.49991%205.76177%201.6071%205.22893%201.8153%204.73261C2.02351%204.23629%202.32855%203.78644%202.71261%203.40937C3.09667%203.03229%203.55203%202.73555%204.05209%202.53649C4.55215%202.33742%205.08687%202.24003%205.625%202.25C6.26172%202.24662%206.89189%202.3786%207.47374%202.6372C8.05559%202.8958%208.57584%203.27511%209%203.75C9.42416%203.27511%209.94441%202.8958%2010.5263%202.6372C11.1081%202.3786%2011.7383%202.24662%2012.375%202.25C12.9131%202.24003%2013.4479%202.33742%2013.9479%202.53649C14.448%202.73555%2014.9033%203.03229%2015.2874%203.40937C15.6714%203.78644%2015.9765%204.23629%2016.1847%204.73261C16.3929%205.22893%2016.5001%205.76177%2016.5%206.3C16.5%2010.317%2011.7157%2013.35%209%2015.75C6.29025%2013.3297%201.5%2010.32%201.5%206.3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 67</span>
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5%203C16.5%202.175%2015.825%201.5%2015%201.5H3C2.175%201.5%201.5%202.175%201.5%203V12C1.5%2012.825%202.175%2013.5%203%2013.5H13.5L16.5%2016.5V3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 22</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--status">
+              <span class="content-row__status-title">Image upload</span>
+              <span class="content-row__status-date">11-04-2016</span>
             </div>
           </div>
 
-          <div class="content-row__col content-row__col--status">
-            <span class="content-row__status-title">Image upload</span>
-            <span class="content-row__status-date">11-04-2016</span>
-          </div>
-        </div>
+          <div class="content-row">
+            <div class="content-row__img">
+              <img src="/monblan-project/assets/post3-CAEn8hla.jpg" alt="Post preview" />
+            </div>
 
-        <div class="content-row">
-          <div class="content-row__img">
-            <img src="/monblan-project/assets/post2-BhcvRp1o.jpg" alt="Post preview" />
-          </div>
+            <div class="content-row__col content-row__col--main">
+              <span class="content-row__title">Today</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.5%206.3C1.49991%205.76177%201.6071%205.22893%201.8153%204.73261C2.02351%204.23629%202.32855%203.78644%202.71261%203.40937C3.09667%203.03229%203.55203%202.73555%204.05209%202.53649C4.55215%202.33742%205.08687%202.24003%205.625%202.25C6.26172%202.24662%206.89189%202.3786%207.47374%202.6372C8.05559%202.8958%208.57584%203.27511%209%203.75C9.42416%203.27511%209.94441%202.8958%2010.5263%202.6372C11.1081%202.3786%2011.7383%202.24662%2012.375%202.25C12.9131%202.24003%2013.4479%202.33742%2013.9479%202.53649C14.448%202.73555%2014.9033%203.03229%2015.2874%203.40937C15.6714%203.78644%2015.9765%204.23629%2016.1847%204.73261C16.3929%205.22893%2016.5001%205.76177%2016.5%206.3C16.5%2010.317%2011.7157%2013.35%209%2015.75C6.29025%2013.3297%201.5%2010.32%201.5%206.3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 128</span>
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5%203C16.5%202.175%2015.825%201.5%2015%201.5H3C2.175%201.5%201.5%202.175%201.5%203V12C1.5%2012.825%202.175%2013.5%203%2013.5H13.5L16.5%2016.5V3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 31</span>
+              </div>
+            </div>
 
-          <div class="content-row__col content-row__col--main">
-            <span class="content-row__title">Today</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 128</span>
-              <span class="stat-item"><i class="icon-comment"></i> 31</span>
+            <div class="content-row__col content-row__col--date">
+              <span class="content-row__date-accent">9-08-2016</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.5%206.3C1.49991%205.76177%201.6071%205.22893%201.8153%204.73261C2.02351%204.23629%202.32855%203.78644%202.71261%203.40937C3.09667%203.03229%203.55203%202.73555%204.05209%202.53649C4.55215%202.33742%205.08687%202.24003%205.625%202.25C6.26172%202.24662%206.89189%202.3786%207.47374%202.6372C8.05559%202.8958%208.57584%203.27511%209%203.75C9.42416%203.27511%209.94441%202.8958%2010.5263%202.6372C11.1081%202.3786%2011.7383%202.24662%2012.375%202.25C12.9131%202.24003%2013.4479%202.33742%2013.9479%202.53649C14.448%202.73555%2014.9033%203.03229%2015.2874%203.40937C15.6714%203.78644%2015.9765%204.23629%2016.1847%204.73261C16.3929%205.22893%2016.5001%205.76177%2016.5%206.3C16.5%2010.317%2011.7157%2013.35%209%2015.75C6.29025%2013.3297%201.5%2010.32%201.5%206.3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 67</span>
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5%203C16.5%202.175%2015.825%201.5%2015%201.5H3C2.175%201.5%201.5%202.175%201.5%203V12C1.5%2012.825%202.175%2013.5%203%2013.5H13.5L16.5%2016.5V3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 22</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--status">
+              <span class="content-row__status-title">Image upload</span>
+              <span class="content-row__status-date">11-04-2016</span>
             </div>
           </div>
 
-          <div class="content-row__col content-row__col--date">
-            <span class="content-row__date-accent">9-08-2016</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 67</span>
-              <span class="stat-item"><i class="icon-comment"></i> 22</span>
+          <div class="content-row">
+            <div class="content-row__img">
+              <img src="/monblan-project/assets/post4-ZAuZ1R9o.jpg" alt="Post preview" />
+            </div>
+
+            <div class="content-row__col content-row__col--main">
+              <span class="content-row__title">Today</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.5%206.3C1.49991%205.76177%201.6071%205.22893%201.8153%204.73261C2.02351%204.23629%202.32855%203.78644%202.71261%203.40937C3.09667%203.03229%203.55203%202.73555%204.05209%202.53649C4.55215%202.33742%205.08687%202.24003%205.625%202.25C6.26172%202.24662%206.89189%202.3786%207.47374%202.6372C8.05559%202.8958%208.57584%203.27511%209%203.75C9.42416%203.27511%209.94441%202.8958%2010.5263%202.6372C11.1081%202.3786%2011.7383%202.24662%2012.375%202.25C12.9131%202.24003%2013.4479%202.33742%2013.9479%202.53649C14.448%202.73555%2014.9033%203.03229%2015.2874%203.40937C15.6714%203.78644%2015.9765%204.23629%2016.1847%204.73261C16.3929%205.22893%2016.5001%205.76177%2016.5%206.3C16.5%2010.317%2011.7157%2013.35%209%2015.75C6.29025%2013.3297%201.5%2010.32%201.5%206.3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 128</span>
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5%203C16.5%202.175%2015.825%201.5%2015%201.5H3C2.175%201.5%201.5%202.175%201.5%203V12C1.5%2012.825%202.175%2013.5%203%2013.5H13.5L16.5%2016.5V3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 31</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--date">
+              <span class="content-row__date-accent">9-08-2016</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.5%206.3C1.49991%205.76177%201.6071%205.22893%201.8153%204.73261C2.02351%204.23629%202.32855%203.78644%202.71261%203.40937C3.09667%203.03229%203.55203%202.73555%204.05209%202.53649C4.55215%202.33742%205.08687%202.24003%205.625%202.25C6.26172%202.24662%206.89189%202.3786%207.47374%202.6372C8.05559%202.8958%208.57584%203.27511%209%203.75C9.42416%203.27511%209.94441%202.8958%2010.5263%202.6372C11.1081%202.3786%2011.7383%202.24662%2012.375%202.25C12.9131%202.24003%2013.4479%202.33742%2013.9479%202.53649C14.448%202.73555%2014.9033%203.03229%2015.2874%203.40937C15.6714%203.78644%2015.9765%204.23629%2016.1847%204.73261C16.3929%205.22893%2016.5001%205.76177%2016.5%206.3C16.5%2010.317%2011.7157%2013.35%209%2015.75C6.29025%2013.3297%201.5%2010.32%201.5%206.3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 67</span>
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5%203C16.5%202.175%2015.825%201.5%2015%201.5H3C2.175%201.5%201.5%202.175%201.5%203V12C1.5%2012.825%202.175%2013.5%203%2013.5H13.5L16.5%2016.5V3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 22</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--status">
+              <span class="content-row__status-title">Image upload</span>
+              <span class="content-row__status-date">11-04-2016</span>
             </div>
           </div>
 
-          <div class="content-row__col content-row__col--status">
-            <span class="content-row__status-title">Image upload</span>
-            <span class="content-row__status-date">11-04-2016</span>
-          </div>
-        </div>
+          <div class="content-row">
+            <div class="content-row__img">
+              <img src="/monblan-project/assets/post5-RwWVz4LY.jpg" alt="Post preview" />
+            </div>
 
-        <div class="content-row">
-          <div class="content-row__img">
-            <img src="/monblan-project/assets/post3-CAEn8hla.jpg" alt="Post preview" />
-          </div>
+            <div class="content-row__col content-row__col--main">
+              <span class="content-row__title">Today</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.5%206.3C1.49991%205.76177%201.6071%205.22893%201.8153%204.73261C2.02351%204.23629%202.32855%203.78644%202.71261%203.40937C3.09667%203.03229%203.55203%202.73555%204.05209%202.53649C4.55215%202.33742%205.08687%202.24003%205.625%202.25C6.26172%202.24662%206.89189%202.3786%207.47374%202.6372C8.05559%202.8958%208.57584%203.27511%209%203.75C9.42416%203.27511%209.94441%202.8958%2010.5263%202.6372C11.1081%202.3786%2011.7383%202.24662%2012.375%202.25C12.9131%202.24003%2013.4479%202.33742%2013.9479%202.53649C14.448%202.73555%2014.9033%203.03229%2015.2874%203.40937C15.6714%203.78644%2015.9765%204.23629%2016.1847%204.73261C16.3929%205.22893%2016.5001%205.76177%2016.5%206.3C16.5%2010.317%2011.7157%2013.35%209%2015.75C6.29025%2013.3297%201.5%2010.32%201.5%206.3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 128</span>
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5%203C16.5%202.175%2015.825%201.5%2015%201.5H3C2.175%201.5%201.5%202.175%201.5%203V12C1.5%2012.825%202.175%2013.5%203%2013.5H13.5L16.5%2016.5V3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 31</span>
+              </div>
+            </div>
 
-          <div class="content-row__col content-row__col--main">
-            <span class="content-row__title">Today</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 128</span>
-              <span class="stat-item"><i class="icon-comment"></i> 31</span>
+            <div class="content-row__col content-row__col--date">
+              <span class="content-row__date-accent">9-08-2016</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.5%206.3C1.49991%205.76177%201.6071%205.22893%201.8153%204.73261C2.02351%204.23629%202.32855%203.78644%202.71261%203.40937C3.09667%203.03229%203.55203%202.73555%204.05209%202.53649C4.55215%202.33742%205.08687%202.24003%205.625%202.25C6.26172%202.24662%206.89189%202.3786%207.47374%202.6372C8.05559%202.8958%208.57584%203.27511%209%203.75C9.42416%203.27511%209.94441%202.8958%2010.5263%202.6372C11.1081%202.3786%2011.7383%202.24662%2012.375%202.25C12.9131%202.24003%2013.4479%202.33742%2013.9479%202.53649C14.448%202.73555%2014.9033%203.03229%2015.2874%203.40937C15.6714%203.78644%2015.9765%204.23629%2016.1847%204.73261C16.3929%205.22893%2016.5001%205.76177%2016.5%206.3C16.5%2010.317%2011.7157%2013.35%209%2015.75C6.29025%2013.3297%201.5%2010.32%201.5%206.3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 67</span>
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5%203C16.5%202.175%2015.825%201.5%2015%201.5H3C2.175%201.5%201.5%202.175%201.5%203V12C1.5%2012.825%202.175%2013.5%203%2013.5H13.5L16.5%2016.5V3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 22</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--status">
+              <span class="content-row__status-title">Image upload</span>
+              <span class="content-row__status-date">11-04-2016</span>
             </div>
           </div>
 
-          <div class="content-row__col content-row__col--date">
-            <span class="content-row__date-accent">9-08-2016</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 67</span>
-              <span class="stat-item"><i class="icon-comment"></i> 22</span>
+          <div class="content-row">
+            <div class="content-row__img">
+              <img src="/monblan-project/assets/post6-DlNPKtDq.jpg" alt="Post preview" />
+            </div>
+
+            <div class="content-row__col content-row__col--main">
+              <span class="content-row__title">Today</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.5%206.3C1.49991%205.76177%201.6071%205.22893%201.8153%204.73261C2.02351%204.23629%202.32855%203.78644%202.71261%203.40937C3.09667%203.03229%203.55203%202.73555%204.05209%202.53649C4.55215%202.33742%205.08687%202.24003%205.625%202.25C6.26172%202.24662%206.89189%202.3786%207.47374%202.6372C8.05559%202.8958%208.57584%203.27511%209%203.75C9.42416%203.27511%209.94441%202.8958%2010.5263%202.6372C11.1081%202.3786%2011.7383%202.24662%2012.375%202.25C12.9131%202.24003%2013.4479%202.33742%2013.9479%202.53649C14.448%202.73555%2014.9033%203.03229%2015.2874%203.40937C15.6714%203.78644%2015.9765%204.23629%2016.1847%204.73261C16.3929%205.22893%2016.5001%205.76177%2016.5%206.3C16.5%2010.317%2011.7157%2013.35%209%2015.75C6.29025%2013.3297%201.5%2010.32%201.5%206.3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 128</span>
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5%203C16.5%202.175%2015.825%201.5%2015%201.5H3C2.175%201.5%201.5%202.175%201.5%203V12C1.5%2012.825%202.175%2013.5%203%2013.5H13.5L16.5%2016.5V3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 31</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--date">
+              <span class="content-row__date-accent">9-08-2016</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.5%206.3C1.49991%205.76177%201.6071%205.22893%201.8153%204.73261C2.02351%204.23629%202.32855%203.78644%202.71261%203.40937C3.09667%203.03229%203.55203%202.73555%204.05209%202.53649C4.55215%202.33742%205.08687%202.24003%205.625%202.25C6.26172%202.24662%206.89189%202.3786%207.47374%202.6372C8.05559%202.8958%208.57584%203.27511%209%203.75C9.42416%203.27511%209.94441%202.8958%2010.5263%202.6372C11.1081%202.3786%2011.7383%202.24662%2012.375%202.25C12.9131%202.24003%2013.4479%202.33742%2013.9479%202.53649C14.448%202.73555%2014.9033%203.03229%2015.2874%203.40937C15.6714%203.78644%2015.9765%204.23629%2016.1847%204.73261C16.3929%205.22893%2016.5001%205.76177%2016.5%206.3C16.5%2010.317%2011.7157%2013.35%209%2015.75C6.29025%2013.3297%201.5%2010.32%201.5%206.3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 67</span>
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5%203C16.5%202.175%2015.825%201.5%2015%201.5H3C2.175%201.5%201.5%202.175%201.5%203V12C1.5%2012.825%202.175%2013.5%203%2013.5H13.5L16.5%2016.5V3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 22</span>
+              </div>
+            </div>
+
+            <div class="content-row__col content-row__col--status">
+              <span class="content-row__status-title">Image upload</span>
+              <span class="content-row__status-date">11-04-2016</span>
             </div>
           </div>
 
-          <div class="content-row__col content-row__col--status">
-            <span class="content-row__status-title">Image upload</span>
-            <span class="content-row__status-date">11-04-2016</span>
-          </div>
-        </div>
-
-        <div class="content-row">
-          <div class="content-row__img">
-            <img src="/monblan-project/assets/post4-ZAuZ1R9o.jpg" alt="Post preview" />
-          </div>
-
-          <div class="content-row__col content-row__col--main">
-            <span class="content-row__title">Today</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 128</span>
-              <span class="stat-item"><i class="icon-comment"></i> 31</span>
+          <div class="content-row">
+            <div class="content-row__img">
+              <img src="/monblan-project/assets/post7-25uvXMHy.jpg" alt="Post preview" />
             </div>
-          </div>
 
-          <div class="content-row__col content-row__col--date">
-            <span class="content-row__date-accent">9-08-2016</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 67</span>
-              <span class="stat-item"><i class="icon-comment"></i> 22</span>
+            <div class="content-row__col content-row__col--main">
+              <span class="content-row__title">Today</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.5%206.3C1.49991%205.76177%201.6071%205.22893%201.8153%204.73261C2.02351%204.23629%202.32855%203.78644%202.71261%203.40937C3.09667%203.03229%203.55203%202.73555%204.05209%202.53649C4.55215%202.33742%205.08687%202.24003%205.625%202.25C6.26172%202.24662%206.89189%202.3786%207.47374%202.6372C8.05559%202.8958%208.57584%203.27511%209%203.75C9.42416%203.27511%209.94441%202.8958%2010.5263%202.6372C11.1081%202.3786%2011.7383%202.24662%2012.375%202.25C12.9131%202.24003%2013.4479%202.33742%2013.9479%202.53649C14.448%202.73555%2014.9033%203.03229%2015.2874%203.40937C15.6714%203.78644%2015.9765%204.23629%2016.1847%204.73261C16.3929%205.22893%2016.5001%205.76177%2016.5%206.3C16.5%2010.317%2011.7157%2013.35%209%2015.75C6.29025%2013.3297%201.5%2010.32%201.5%206.3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 128</span>
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5%203C16.5%202.175%2015.825%201.5%2015%201.5H3C2.175%201.5%201.5%202.175%201.5%203V12C1.5%2012.825%202.175%2013.5%203%2013.5H13.5L16.5%2016.5V3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 31</span>
+              </div>
             </div>
-          </div>
 
-          <div class="content-row__col content-row__col--status">
-            <span class="content-row__status-title">Image upload</span>
-            <span class="content-row__status-date">11-04-2016</span>
-          </div>
-        </div>
-        <div class="content-row">
-          <div class="content-row__img">
-            <img src="/monblan-project/assets/post5-RwWVz4LY.jpg" alt="Post preview" />
-          </div>
-
-          <div class="content-row__col content-row__col--main">
-            <span class="content-row__title">Today</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 128</span>
-              <span class="stat-item"><i class="icon-comment"></i> 31</span>
+            <div class="content-row__col content-row__col--date">
+              <span class="content-row__date-accent">9-08-2016</span>
+              <div class="content-row__stats">
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1.5%206.3C1.49991%205.76177%201.6071%205.22893%201.8153%204.73261C2.02351%204.23629%202.32855%203.78644%202.71261%203.40937C3.09667%203.03229%203.55203%202.73555%204.05209%202.53649C4.55215%202.33742%205.08687%202.24003%205.625%202.25C6.26172%202.24662%206.89189%202.3786%207.47374%202.6372C8.05559%202.8958%208.57584%203.27511%209%203.75C9.42416%203.27511%209.94441%202.8958%2010.5263%202.6372C11.1081%202.3786%2011.7383%202.24662%2012.375%202.25C12.9131%202.24003%2013.4479%202.33742%2013.9479%202.53649C14.448%202.73555%2014.9033%203.03229%2015.2874%203.40937C15.6714%203.78644%2015.9765%204.23629%2016.1847%204.73261C16.3929%205.22893%2016.5001%205.76177%2016.5%206.3C16.5%2010.317%2011.7157%2013.35%209%2015.75C6.29025%2013.3297%201.5%2010.32%201.5%206.3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 67</span>
+                <span class="stat-item"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.5%203C16.5%202.175%2015.825%201.5%2015%201.5H3C2.175%201.5%201.5%202.175%201.5%203V12C1.5%2012.825%202.175%2013.5%203%2013.5H13.5L16.5%2016.5V3Z'%20fill='black'/%3e%3c/svg%3e" alt="" /> 22</span>
+              </div>
             </div>
-          </div>
 
-          <div class="content-row__col content-row__col--date">
-            <span class="content-row__date-accent">9-08-2016</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 67</span>
-              <span class="stat-item"><i class="icon-comment"></i> 22</span>
+            <div class="content-row__col content-row__col--status">
+              <span class="content-row__status-title">Image upload</span>
+              <span class="content-row__status-date">11-04-2016</span>
             </div>
-          </div>
-
-          <div class="content-row__col content-row__col--status">
-            <span class="content-row__status-title">Image upload</span>
-            <span class="content-row__status-date">11-04-2016</span>
-          </div>
-        </div>
-
-        <div class="content-row">
-          <div class="content-row__img">
-            <img src="/monblan-project/assets/post6-DlNPKtDq.jpg" alt="Post preview" />
-          </div>
-
-          <div class="content-row__col content-row__col--main">
-            <span class="content-row__title">Today</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 128</span>
-              <span class="stat-item"><i class="icon-comment"></i> 31</span>
-            </div>
-          </div>
-
-          <div class="content-row__col content-row__col--date">
-            <span class="content-row__date-accent">9-08-2016</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 67</span>
-              <span class="stat-item"><i class="icon-comment"></i> 22</span>
-            </div>
-          </div>
-
-          <div class="content-row__col content-row__col--status">
-            <span class="content-row__status-title">Image upload</span>
-            <span class="content-row__status-date">11-04-2016</span>
-          </div>
-        </div>
-
-        <div class="content-row">
-          <div class="content-row__img">
-            <img src="/monblan-project/assets/post7-25uvXMHy.jpg" alt="Post preview" />
-          </div>
-
-          <div class="content-row__col content-row__col--main">
-            <span class="content-row__title">Today</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 128</span>
-              <span class="stat-item"><i class="icon-comment"></i> 31</span>
-            </div>
-          </div>
-
-          <div class="content-row__col content-row__col--date">
-            <span class="content-row__date-accent">9-08-2016</span>
-            <div class="content-row__stats">
-              <span class="stat-item"><i class="icon-heart"></i> 67</span>
-              <span class="stat-item"><i class="icon-comment"></i> 22</span>
-            </div>
-          </div>
-
-          <div class="content-row__col content-row__col--status">
-            <span class="content-row__status-title">Image upload</span>
-            <span class="content-row__status-date">11-04-2016</span>
           </div>
         </div>
       </div>
