@@ -3,18 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Monblan Project</title>
   </head>
   <body>
-    <main class="main-container">
-      <header class="profile-header"></header>
+    <div class="bg-wave bg-wave--left">
+      <img src="/src/assets/images/bg-left-wave.svg" alt="" />
+    </div>
 
-      <div class="view-controls"></div>
+    <div class="bg-wave bg-wave--right">
+      <img src="/src/assets/images/bg-right-wave.svg" alt="" />
+    </div>
 
-      <div class="content-wrapper tiles"></div>
+    <header class="site-header">
+      <div class="container">
+        <div class="profile-header-content">
+          <div class="profile-avatar">
+            <img src="/src/assets/images/logo.svg" alt="Monblan Project Logo" />
+          </div>
+
+          <div class="profile-info">
+            <div class="profile-row-meta">
+              <h1 class="profile-username">monblanproject</h1>
+              <div class="btn-start">Start on 17-02-2016</div>
+            </div>
+
+            <div class="profile-stats">
+              <span><strong>870</strong> posts</span>
+              <span><strong>11,787</strong> followers</span>
+              <span><strong>112</strong> following</span>
+            </div>
+
+            <div class="profile-filters">
+              <span class="filter-label">Date</span>
+
+              <div class="filter-inputs">
+                <div class="datepicker-field">
+                  <input type="text" id="date-from" class="datepicker-input" placeholder="from date" />
+
+                  <div class="datepicker-icons">
+                    <img src="/src/assets/icons/plus.svg" alt="plus" />
+                    <img src="/src/assets/icons/calendar.svg" alt="calendar" />
+                  </div>
+                </div>
+
+                <div class="datepicker-field">
+                  <input type="text" id="date-to" class="datepicker-input" placeholder="09.08.2016" />
+
+                  <div class="datepicker-icons">
+                    <img src="/src/assets/icons/plus.svg" alt="plus" />
+                    <img src="/src/assets/icons/calendar.svg" alt="calendar" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <h1>Тут контент</h1>
+      <p>Контент має бути строго по центру і не рухатися через хвилі.</p>
     </main>
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/src/scripts/main.js"></script>
   </body>
 </html>

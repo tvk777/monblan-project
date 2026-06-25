@@ -1,0 +1,28 @@
+@use '../variables.scss' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-roboto;
+  font-weight: $font-regular;
+  background-color: $light-bg;
+  color:$dark-text;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden; // Ховає горизонтальний скролл, якщо хвиля трохи вилізе
+}
+
+// 2. Головний контейнер для контенту (твої 836px)
+.container {
+  width: 100%;
+  max-width: 836px;
+  margin: 0 auto; // Центрує контент на екрані
+  padding: 0 20px; // Безпечні відступи для мобільних з боків
+
+  position: relative;
+  z-index: 2; // Піднімає контент НАД хвилями, щоб текст можна було виділити
+}

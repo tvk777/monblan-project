@@ -1,0 +1,30 @@
+.bg-wave {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none; 
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    &--left {
+      top: 0;
+      left: 0;
+      width: 43vw; 
+      max-width: 625px;
+    }
+
+    &--right {
+      bottom: 40px; 
+      right:0;
+      width: 15vw;
+      max-width: 215px; 
+    }
+  }
+}
