@@ -35,7 +35,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  color: #000000;
+  color: $dark-text;
 }
 
 .profile-row-meta {
@@ -60,7 +60,7 @@
   border-radius: 3px;
   color: $blue-color;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: $font-medium;
   padding: 6px 12px;
   cursor: pointer;
   background: transparent;
@@ -69,11 +69,10 @@
 .profile-stats {
   display: flex;
   gap: 24px;
-  color: #262626;
 }
 
 .profile-stats strong {
-  font-weight: 600;
+  font-weight: $font-medium;
 }
 
 .profile-filters {
@@ -97,12 +96,12 @@
 .datepicker-field {
   display: flex;
   align-items: center;
-  border: 1px solid #cccccc;
+  border: $picker-border;
   border-radius: 4px;
   height: 34px;
   overflow: hidden;
   box-sizing: border-box;
-  background-color: #ffffff;
+  background-color: $light-color;
 }
 
 .datepicker-input {
@@ -124,7 +123,7 @@
   align-items: center;
   height: 100%;
   background-color: #efefef;
-  border-left: 1px solid #cccccc;
+  border-left: $picker-border;
 }
 
 .datepicker-icons img {
@@ -136,7 +135,7 @@
 }
 
 .datepicker-icons img:not(:last-child) {
-  border-right: 1px solid #cccccc;
+  border-right: $picker-border;
 }
 
 .datepicker-icons img:hover {
