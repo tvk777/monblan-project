@@ -21,7 +21,22 @@ A Vite-based frontend project deployed to GitHub Pages.
 
 ## ▶️ Run Locally
 
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/tvk777/monblan-project.git
+cd monblan-project
+```
+
+### 2️⃣ Install dependencies
+
 ```bash
 npm install
-npm run dev
 ```
+
+### 3️⃣ Run locally
+
+```bash
+npm start
+```
+
